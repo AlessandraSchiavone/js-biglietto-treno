@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+body{
+    background-color: #E6E6E6;
+}
+.biglietto{
+    width:35%;
+    margin:30px auto;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 2px grey;
+    text-align: center;
+}
+.biglietto img{
+    margin:20px;
+    width:40%;
+}
+.biglietto h2{
+    text-transform: uppercase;
+    color: #413930;
+    font-size:18px;
+    padding:10px;
+}
+.biglietto div{
+    padding:10px;
+    color: #413930;
+    font-size: 16px;
+}
+#km,
+#eta,
+#prezzo{
+    color:#C41228;
+}
+.paga{
+    margin:10px;
+    padding:5px;
+    font-weight: bold;
+    background-color:#C41228 ;
+    color:white;
+    text-transform: uppercase;
+}
+.paga:hover{
+    background-color: #80000f;
+    cursor: pointer;
+}
