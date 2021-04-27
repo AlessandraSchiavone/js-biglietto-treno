@@ -27,15 +27,18 @@ var prezzoScontato2;
 
 if ( eta < 18) {
     console.log("il passeggero è minorenne");  
+    document.getElementById("sconto").innerHTML = "Il passeggero è minorenne, ha ricevuto uno sconto del 20% sul totale: " + prezzoTotale +" €";
     prezzoScontato1 = parseFloat(prezzoTotale - prezzoSconto20).toFixed(2);
     document.getElementById("prezzo").innerHTML = prezzoScontato1 + " €";
 }else if( eta >= 65 ){
     console.log("il passeggero è over 65");  
-    prezzoScontato2 =parseFloat(prezzoTotale - prezzoSconto40).toFixed(2);
+    prezzoScontato2 = parseFloat(prezzoTotale - prezzoSconto40).toFixed(2);
+    document.getElementById("sconto").innerHTML = "Il passeggero è over 65, ha ricevuto uno sconto del 40% sul totale: " + prezzoTotale +" €";
     document.getElementById("prezzo").innerHTML = prezzoScontato2 +" €";
 }else{
     console.log("il passeggero non è minorenne e non è over 65");
     document.getElementById("prezzo").innerHTML = prezzoTotale +" € ";
+    document.getElementById("sconto").innerHTML = "Il passeggero non rientra in nessuna fascia d'età per ricevere uno sconto sul totale";
 }
 
 

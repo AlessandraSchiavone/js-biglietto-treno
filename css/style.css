@@ -36,6 +36,11 @@ body{
 #prezzo{
     color:#C41228;
 }
+#sconto{
+    padding:5px;
+    font-style: italic;
+    text-decoration: underline;
+}
 .paga{
     margin:10px;
     padding:5px;
